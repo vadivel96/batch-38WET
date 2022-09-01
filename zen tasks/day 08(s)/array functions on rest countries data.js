@@ -7,7 +7,7 @@ request1.onload= function print() {
     var filterdArray=countryData.filter((ele)=>{
         return ele.region === "Asia"
     })
-    console.log(filterdArray)
+    //console.log(filterdArray)
     
 }
 
@@ -23,7 +23,7 @@ request1.onload= function print() {
     var filterdArray=countryData.filter((ele)=>{
         return ele.population < 200000
     })
-    console.log(filterdArray)
+    //console.log(filterdArray)
     
 }
 // q3)Print the following details name, capital, flag using forEach function
@@ -33,9 +33,9 @@ request1.send();
 request1.onload= function print() {
     var countryData=JSON.parse(this.responseText);
     var filterdArray=countryData.forEach(element => {
-          console.log(element.name);
-          console.log(element.capital);
-         console.log(element.flag);
+          //console.log(element.name);
+          //console.log(element.capital);
+        // console.log(element.flag);
     });
     
 }
@@ -49,7 +49,7 @@ request1.onload= function print() {
     var filterdArray=countryData.reduce((population,element)=>{
                return population+element.population
     },0)
-     console.log(filterdArray);   
+   //  console.log(filterdArray);   
     
 }
 
