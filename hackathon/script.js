@@ -22,7 +22,7 @@ div.innerHTML=`   <div class="container-fluid grid div1">
 
 </div>
 `
-body.append(div);
+body.append(div);  
 
 
   async function iceAndFire(){
