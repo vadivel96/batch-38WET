@@ -8,7 +8,7 @@ div.innerHTML=`   <div class="container-fluid grid div1">
        <p><mark>search for ice and fire universe</mark> </p>
        <div class="col-2">
        <input type="number" min="1" max="9"  class="form-control " id="searchbar"  placeholder="type book number">
-       </div>
+       </div> 
        <div class="col-auto">
          <button type="button" onclick="iceAndFire()" class="btn btn-primary mb-3 " >Click</button>
        </div>
@@ -24,14 +24,15 @@ div.innerHTML=`   <div class="container-fluid grid div1">
 `
 body.append(div);
 
-try{
+
   async function iceAndFire(){
-   try{
+    try{
     let searchbarvalue=document.getElementById('searchbar').value;
     console.log(searchbarvalue);
     const getapi=await fetch(`https://www.anapioficeandfire.com/api/books/${searchbarvalue}`);
+    
     let bookdetails=await getapi.json();
-  
+     console.log(bookdetails)
   
     async function iceAndFire2(){     
   
@@ -69,12 +70,10 @@ try{
   
    }
    catch(err){
-       console.log(err)
-   } 
+    console.log(err);
+}
+  
   } 
   
-}
-catch(err){
-  console.log(err);
-}
+
  
