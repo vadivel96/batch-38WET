@@ -79,15 +79,14 @@ console.log("answer for 5th ques");
               if(reversedstring.toUpperCase() === iterator.toUpperCase())
               {console.log(reversedstring)}
              
-              for(i=iterator.length-1;i>=0;i--){
-                reversedName.pop(iterator[i]); 
-                
-             }
-              
+             // for(i=iterator.length-1;i>=0;i--){
+              //  reversedName.pop(iterator[i]); 
+               // }
+              reversedName.length=0;
        }
         return 0;
     })
-     console.log(anofun5(["racecar","madam","level","access","lock"])); 
+     console.log(anofun5(["racecar","madam","level","access","lock","dad"])); 
 }) ()
 
  
