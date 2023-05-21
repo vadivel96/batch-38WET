@@ -1,4 +1,3 @@
-
 var express = require('express');
 var router = express.Router();
 var mysql=require('mysql2');
@@ -231,5 +230,4 @@ router.post("/bookRoom", function (req, res) {
 
 
 module.exports = router;
-
 
