@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 548807527c405b1d0dfc3d6f5b64f2cdfb88dc43
 var express = require('express');
 var router = express.Router();
 var mysql=require('mysql2');
@@ -232,6 +235,7 @@ router.post("/bookRoom", function (req, res) {
 
 module.exports = router;
 
+<<<<<<< HEAD
 =======
 var express = require('express');
 var router = express.Router();
@@ -467,3 +471,5 @@ router.post("/bookRoom", function (req, res) {
 module.exports = router;
 
 >>>>>>> b62b6ccc1687109321cf5aad3a274b9a62667f97
+=======
+>>>>>>> 548807527c405b1d0dfc3d6f5b64f2cdfb88dc43

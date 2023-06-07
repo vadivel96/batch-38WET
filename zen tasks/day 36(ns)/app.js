@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -44,7 +44,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-=======
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -90,4 +89,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
->>>>>>> b62b6ccc1687109321cf5aad3a274b9a62667f97
+
