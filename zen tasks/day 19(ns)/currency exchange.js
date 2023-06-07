@@ -16,7 +16,9 @@ function output(event){
         console.log(country)
         let restcountries=await fetch(`https://restcountries.com/v3.1/name/${country}`)
         var country1=await restcountries.json();
+        console.log(country1);
         var currencycode1=Object.keys(country1[0].currencies);
+        console.log(currencycode1);
         currencycode1= currencycode1[0].toLowerCase();
         console.log(currencycode1);
         emptyarray.push(currencycode1)
